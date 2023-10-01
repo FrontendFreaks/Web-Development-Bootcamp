@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="images/message.png">
+    <title>Send Message To Jayant</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h2> Send Message To Jayant</h2>
+    <form action="mailto: baidjayant2002@gmail.com" method="post" enctype="text/plain">
+        <label for="Name">Name*:
+        <input type="text" name="Name" id="Name" placeholder="Enter Name" required>
+        </label>
+        <br>
+        <br>
+        <label for="email">Email Id*:
+            <input type="email" name="Email" id="email" placeholder="Enter Email Id" required>
+        </label>
+        <br>
+        <br>
+        Gender:
+        <label for="Male">
+            <input type="radio" name="Gender" id="Male">Male
+        </label>
+        <label for="Female">
+            <input type="radio" name="Gender" id="Female"> Female
+        </label>
+        <br>
+        <br>
+        <label for="Video">
+            Send Your Video: <input type="file" name="Video" id="Video">
+        </label>
+        <br><br>
+        <label for="Message">
+            Enter Your Message:
+            <br>
+            <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+        </label>
+        <br>
+        <input type="submit" name="" id="" autofocus>
+        
+        <input type="reset" value="Reset" name="Reset" autofocus>
+    </form>
+</body>
+</html>
