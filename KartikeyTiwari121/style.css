@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* overflow-x: hidden; */
+}
+body{
+    background-color: #5CDB95;
+}
+.section-one{
+    padding-top: 10%;
+    height: 100vh;
+}
+h1{
+    font-size: 4rem;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    color: #EDF5E1;
+    text-shadow: 2px 1px 10px #1f28337a;
+}
+.About{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+    padding: 10px;
+    color: #05386B;
+    margin: 20px 5px 50px 5px;
+    transition: 1s;
+}
+.About:hover{
+    transform: scale(1.04);
+    box-shadow: 0px 0px 10px #00000042;
+    background-color: #a8d0e632;
+}
+p > span{
+ color: #C3073F;
+ text-transform: uppercase;
+}
+
+.section-two{
+    height: 100vh;
+    width: 100vw;
+    background-color: #EDC7B7;
+    padding: 40px 0; /* it make some distance from top b/w text & section-one  but also create overflow when using padding 10px in all side, so i make L,R padding 0 to prevent overflow*/
+
+    margin: 0;
+    width: 100%; /* Set the width to 100% to match the viewport */
+}
+#link-deatail{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
+.social-container {
+    /* this is causing overflow previously */
+    margin: 0 30px;
+    display: flex;
+    justify-content: center;
+}
+.social-links{
+    background-color: #C3073F;
+    font-size: 1.4rem;
+    text-decoration: none;
+    padding: 10px 20px; /* Adjust padding as needed for your design */
+    margin: 5px; /* Add some margin between the links if desired */
+    color: #EDF5E1;
+    font-weight: 600;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+.social-links:hover{
+    box-shadow: 0px 0px 30px #f85e60;
+}
+.profile-img{
+    margin-bottom: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* above is used to center image */
+    width: 80%;
+    border: 2px solid #250e15;
+    border-radius: 20px;
+    box-shadow: 9px 11px #000000;
+}
+
+.section-three{
+    height: 100vh;
+    /* width: 100vw;  >> this 100vw width is causing overflow,so removwd it, and same for section four */
+    background-color: #A8D0E6;
+    padding-top: 10%;
+    padding-left: 3px;
+    padding-right: 5px; 
+
+}
+h3{
+    margin: 0px 70px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #17252A;
+}
+ul{
+    border: 0px solid;
+    border-radius: 10px;
+    margin: 0 20vw;
+    box-shadow: 2px 5px 20px #000000;
+}
+ul li{
+    color:#2C3531;
+    list-style: none;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 5px;
+}
+
+.education-table{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #17252A;
+    text-align: center;
+    margin: 20vh 10vh 2vh;
+}
+table{
+    
+    background-color: #05386ba1;
+    margin-left: auto;
+    margin-right: auto;
+}
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding-left: 10px;
+}
+
+tr th{
+    font-size: 0.8rem;
+    color: #250e15;
+}
+  
+tr td{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #EDF5E1;
+}
+
+.section-four{
+    height: 100vh;
+    background-color: #6B6E70;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* You can adjust this as needed */
+}
+.contact-form{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #111b1f;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+form{
+    width: 60vw;
+    background-color: #c3073f79;
+    border: 2px solid;
+    text-align: center;
+    padding: 20px;
+    margin: 0 2vh 0 0;
+    box-shadow: 2px 5px 3px #000000;
+}
+label{
+    font-size: 1.4rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+}  
+input{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+#email{
+    margin-bottom: 6vh;
+}
+#message{
+    width: 50%;
+   padding: 5px;
+   border-radius: 5px;
+}
+button{
+    margin-top: 10px;
+    font-size: 1.6rem;
+    padding: 4px 20px;
+    border-radius: 5px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(34, 115, 255);
+}
+
+
+/* media query starts here */
+
+@media only screen and (max-width: 768px) and (min-width: 400px) {
+
+    .profile-img{
+        width: 60%;
+    }
+    tr th{
+        font-size: 1.2rem;
+        color: #250e15;
+    }
+      
+    tr td{
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #EDF5E1;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    #link-deatail{
+        margin-top: 0px;
+    }
+    .profile-img{
+        width: 51%;
+    }
+    tr th{
+        font-size: 1.7rem;
+        color: #250e15;
+        padding: 10px;
+    }
+      
+    tr td{
+        font-size: 2rem;
+        font-weight: 600;
+        color: #EDF5E1;
+        padding: 10px;
+    }
+    .About{
+        font-size: 1.6rem;
+        padding: 15px;
+        margin: 20px 15px 50px 15px;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+    #link-deatail{
+        margin-top: 0px;
+    }
+    .profile-img{
+        width: 40%;
+    }
+    tr th{
+        font-size: 1.7rem;
+        color: #250e15;
+        padding: 10px;
+    }
+      
+    tr td{
+        font-size: 2rem;
+        font-weight: 600;
+        color: #EDF5E1;
+        padding: 10px;
+    }
+    .About{
+        font-size: 1.6rem;
+        padding: 15px;
+        margin: 20px 15px 50px 15px;
+    }
+}
+@media only screen and (min-width: 1200px){
+    #link-deatail{
+        margin-top: 0px;
+    }
+    .profile-img{
+        width: 40%;
+    }
+    tr th{
+        font-size: 1.7rem;
+        color: #250e15;
+        padding: 10px;
+    }
+      
+    tr td{
+        font-size: 2rem;
+        font-weight: 600;
+        color: #EDF5E1;
+        padding: 10px;
+    }
+    .About{
+        font-size: 1.6rem;
+        padding: 15px;
+        margin: 20px 15px 50px 15px;
+    }
+}
+
+
