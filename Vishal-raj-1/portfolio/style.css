@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.paragraph{
+    color: blue;
+    font-size: 20px;
+}
+
+/* Selector */
+
+/* Element Selector */
+h1{
+    color: red
+}
+
+/* ID Selector */
+#skills{
+    color: green;
+}
+
+/* Class Selector */
+.paragraph{
+    color: yellow;
+}
+
+/* Attribute Selector */
+[type="text"]{
+    color: purple;
+}
+
+h1, p{
+    color: red;
+}
