@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+    font-size: .9rem;
+}
+
+html,body{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 228, 200);
+    overflow-x: hidden;
+}
+
+.form{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    width: 65%;
+    height: 150vh;
+    background-color: white;
+    border-radius: 2.5%;
+}
+.form>p {
+    text-align: right;
+    padding: 0 2rem;
+    margin-top:1.5rem ;
+}
+.form>p a{
+    font-weight: 600;
+    color: rgb(255, 144, 0);
+ }
+ .signUp{
+    padding: 5%;
+    margin-left: 5%;
+    height: 100%;
+    width: 90%;
+    /* background-color:azure; */
+ }
+
+ .fullName{
+    width: 40%;
+    height: 4vh;
+    padding-left: 10px;
+    border-radius: 100px;
+    border: none;
+    background-color: rgb(241, 244, 248);
+    font-size: .8rem;
+ }
+ 
+ #select{
+    color: rgba(151, 151, 151, 0.411);
+    width: 40%;
+    height: 4vh;
+    padding-left: 10px;
+    border-radius: 100px;
+    border: none;
+    background-color: rgb(241, 244, 248);
+    font-size: .8rem;
+    margin-top: 1.5%;
+ }
+input{
+    margin-top: 1.5%;
+}
+ input::placeholder{
+     color: rgba(151, 151, 151, 0.411);
+     
+ }
+
+ input:focus::placeholder{
+    opacity: 0;
+ }
+
+ .fullName:focus{
+    border:none;
+    outline: none;
+    background-color: white;
+    box-shadow: 0px 0px 5px 1px rgb(255, 228, 200);
+ }
+label{
+    opacity: .7;
+    font-size: .7rem;
+    margin-right: 2%;
+    font-weight: 600;
+    
+}
+h3{
+    margin-bottom: 5%;
+}
+#textbox{
+    width: 90%;
+    height: 15vh;
+    border-radius: 2vh;
+}
+.education{
+    width: 100%;
+    height: 20vh;
+    padding: 1rem;
+    border-radius: 2vh;
+}
+.education div{
+    width: 33%;
+    height: 70%;
+
+}
+.education input{
+    width: 90%;
+    background-color: white;
+}
+section{
+    display: flex;
+}
+.button{
+    margin-top: 3%;
+    margin-left: 75%;
+}
+
+.button button{
+    border: none;
+    background-color: rgb(255, 144, 0);
+    border-radius: 1rem;
+    width: 30%;
+    height: 40%;
+    font-size: .7rem;
+    color: white;
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: box-shadow .2s ease-in-out;
+}
+.button button:hover{
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.274);
+
+}
+.submit{
+    border: none;
+    background-color: rgb(255, 144, 0);
+    border-radius: 1rem;
+    width: 12rem;
+    height: 2.5rem;
+    font-size: .7rem;
+    color: white;
+    margin-left: 38%;
+    margin-top: 10%;
+    cursor: pointer;
+    transition: box-shadow .2s ease-in-out;
+    
+
+}
+.submit:hover{
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.274);
+}
+
+
+    
+
