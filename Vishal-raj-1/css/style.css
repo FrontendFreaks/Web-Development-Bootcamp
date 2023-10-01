@@ -1,0 +1,88 @@
+p{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-style: oblique;
+    font-variant: small-caps;
+    /* font-stretch: expanded; */
+
+    /* colors by name  */
+    color: blue;
+
+    /* colors by hex value  */
+    color: #1582b5;
+
+    /* color by rgb value */
+    color: rgb(15, 82, 55);
+
+
+    background-color: rgb(182, 221, 255);
+    background: linear-gradient(#fff, rgb(182, 221, 255) );
+
+    background: radial-gradient(blue, white);
+
+    background-image: url("https://images.unsplash.com/photo-1695477718933-a35f4921e903?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1870&q=80");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#main{
+    background: #ccc;
+    border-width: 1px;
+    border-style: dashed;
+    border-color: red;
+    position: sticky;
+    top: 10px;
+    /* position: relative; */
+    border: 3px solid black;
+    box-shadow: 0px 0px 4px 1px red;
+}
+
+/* Position: Static, Relative, Absolute, Fixed, sticky */
+#heading{
+    background: #fff;
+    /* position: absolute;
+    top: 20px; */
+    padding: 15px;
+    margin: 15px 5px 10px 8px;
+    border: 3px solid black;
+    text-align: center;
+    text-shadow: 0px 0px 3px #ccc;
+}
+
+button{
+    position: sticky;
+    bottom: 10px;
+    left: 50px;
+}
+a{
+    text-decoration: none;
+    color: blue;
+    border: 1px solid red;
+    display: inline-block;
+    width: 80px;
+    transform: scale(0.9);
+    transition: ease-in-out 1s;
+}
+
+a:hover{
+    color: green;
+    transform: scale(1);
+}
+
+a:visited{
+    color: red;
+}
+
+a:active{
+    color: pink;
+}
+
+@media only screen and (min-width < 700px) {
+    body{
+        background: red
+    }
+}
+
