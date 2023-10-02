@@ -1,69 +1,79 @@
-        body {
-            background-color:lightcoral ;
-            font-family: Verdana;
-            text-align: center;
-        }
- 
-        /* Styling the Form (Color, Padding, Shadow) */
-        form {
-            background-color: #fff;
-            max-width: 500px;
-            margin: 50px auto;
-            padding: 30px 20px;
-            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
-        }
- 
-        /* Styling form-control Class */
-        .form-control {
-            text-align: left;
-            margin-bottom: 20px;
-        }
- 
-        /* Styling form-control Labels */
-        .form-control label {
-            display: block;
-            margin-bottom: 12px;
-        }
- 
-        /* Styling form-control input,
-        select, textarea */
-        .form-control input,
-        .form-control select,
-        .form-control textarea {
-            border: 1px solid #777;
-            border-radius: 20px;
-            font-family: inherit; /* it'll inherit font font-style from parent */
-            padding: 10px;
-            display: block;
-            width: 95%;
-        }
-        .form-control select{
-            cursor: pointer;
-        }
- 
-        /* Styling form-control Radio
-        button and Checkbox */
-        .form-control input[type="radio"],
-        .form-control input[type="checkbox"] {
-            display: inline-block;
-            width: auto;
-        }
- 
-        /* Styling Button */
-        button {
-            background-color: lightcoral;
-            border: 1px solid #777;
-            border-radius: 9px;
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 21px;
-            display: block;
-            width: 100%;
-            padding: 5px;
-            margin-top: 50px;
-            margin-bottom: 20px;
-        }
-        button:hover{
-            cursor: pointer;
-            background-color: burlywood;
-            color: rgb(255, 255, 255);
-        }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+body {
+    background-color:lightcoral ;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Styling the Form (Color, Padding, Shadow) */
+form {
+    background-color: #fff;
+    max-width: 500px;
+    height: 100vh;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    position: relative;
+}
+#form h1{
+    position: sticky;
+}
+/* Styling form-control Class */
+.form-control {
+    text-align: left;
+    margin-bottom: 20px;
+}
+/* Styling form-control Labels */
+.form-control label {
+    display: block;
+    margin-bottom: 12px;
+}
+/* Styling form-control input,
+select, textarea */
+.form-control input,
+.form-control select,
+.form-control textarea {
+    border: 1px solid #777;
+    border-radius: 20px;
+    font-family: inherit; /* it'll inherit font font-style from parent */
+    padding: 10px;
+    display: block;
+    width: 95%;
+}
+.form-control select{
+    cursor: pointer;
+}
+/* Styling form-control Radio
+button and Checkbox */
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+}
+/* Styling Button */
+button {
+    background-color: lightcoral;
+    border: 1px solid #777;
+    border-radius: 9px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 21px;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: burlywood;
+    color: rgb(255, 255, 255);
+}
