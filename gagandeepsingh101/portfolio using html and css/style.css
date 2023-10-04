@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* style navigation bar */
+#navbar {
+  z-index: 101;
+  position: sticky;
+  background-color: white;
+  top: 0;
+  width: 100%;
+  padding: 2vh 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.332);
+}
+#nav-heading {
+  font-size: 30px;
+}
+#link-list {
+  width: 35%;
+  display: flex;
+  list-style: none;
+}
+.link {
+  font-size: 20px;
+  padding: 1vh 1.5vw;
+  text-decoration: none;
+  color: black;
+}
+.link:hover {
+  padding: 1vh 1.5vw;
+  background-color: rgba(128, 128, 128, 0.223);
+}
+
+/* style basic info  */
+
+.basic-animation {
+  transform: scale(0.95);
+  transition: all 1s ease;
+}
+.basic-animation:hover {
+  transform: scale(1);
+}
+.heading-style {
+  font-weight: 100;
+  font-size: 30px;
+  width: fit-content;
+  padding-bottom: 1vh;
+  letter-spacing: 2px;
+  border-bottom: 4px solid skyblue;
+}
+#basic-info {
+  margin: 1%;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#text-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#text-info p {
+  margin: 2vh 0;
+  font-size: 20px;
+}
+#text-info h1 {
+  margin: 2vh 0;
+  font-size: 40px;
+}
+
+#person-pic {
+  height: 40%;
+  width: 40%;
+  padding: 4%;
+  border-radius: 50%;
+}
+
+.section-style {
+  height: 50vh;
+  padding: 2vh 3vw;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* style about section */
+#about p {
+  text-align: justify;
+  font-size: 20px;
+}
+#about button {
+  border: none;
+  background-color: white;
+  padding: 1%;
+  width: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#about button:hover {
+  background-color: rgba(128, 128, 128, 0.179);
+}
+#about button a {
+  color: black;
+  text-decoration: none;
+}
+.info h2 {
+  font-weight: 500;
+}
+.info p {
+  padding: 1vh 0;
+}
+
+/* style skill section */
+#skill {
+  display: flex;
+  justify-content: center;
+}
+#skill-grid {
+  margin-top: 1vh;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.skill-tech {
+  padding: 2% 4%;
+  margin: 2vh 0;
+  flex: 1;
+  display: block;
+  height: fit-content;
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+}
+.skill-tech:hover {
+  background-color: rgba(128, 128, 128, 0.179);
+}
+.skill-image {
+  height: 50px;
+  width: 60px;
+  margin-right: 6%;
+}
+
+/* desgin project section */
+#projects {
+  height: fit-content;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#project-sec {
+  padding-bottom: 5%;
+  margin-top: 4%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.project {
+  height: fit-content;
+  width: fit-content;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1vh;
+}
+.project h3{
+  margin: 2vh 0;
+}
+.project h3 a {
+  font-weight: 500;
+  font-size: 25px;
+  text-decoration: none;
+  color: #6396ff;
+}
+.project h3 a:hover {
+  color: #2c6ef2;
+}
+.project p {
+  font-size: 20px;
+ text-align: justify;
+ padding: 0 2% 2% 2%;
+}
+
+
+/* desgin footer */
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: black;
+  height: 10vh;
+}
+footer a{
+  font-size: 40px;
+  color: gray;
+  text-decoration: none;
+margin: 0 1vw;
+transform: scale(0.95);
+transition: all 1s ease;
+}
+footer a:hover{
+  transform: scale(1);
+color: white;
+}
+@media screen and (max-width: 568px) {
+  #navbar {
+    justify-content: center;
+    flex-direction: column;
+  }
+  #link-list {
+    padding-top: 1vh;
+    justify-content: center;
+    width: 100%;
+  }
+  .link {
+    padding: 1vh 2vw;
+    font-size: 18px;
+  }
+  .link:hover {
+    padding: 1vh 2vw;
+  }
+  #basic-info {
+    margin-top: 1vh;
+    flex-direction: column;
+    align-items: center;
+  }
+  #text-info {
+    text-align: center;
+  }
+  #text-info h1 {
+    font-size: 25px;
+  }
+  #person-pic {
+    height: 100%;
+    width: 100%;
+  }
+  .section-style {
+    padding: 2vh 3vw;
+    height: 60vh;
+  }
+  #about p {
+    font-size: 18px;
+  }
+  #about button {
+    padding: 1vh 1.5vw;
+  }
+  #skill {
+    height: fit-content;
+  }
+  #skill-grid {
+    grid-template-columns: 1fr;
+  }
+  #project-sec {
+    grid-template-columns: 1fr;
+  }
+  .project{
+    height: fit-content;
+  }
+  footer{
+    height: 7vh;
+  }
+}
