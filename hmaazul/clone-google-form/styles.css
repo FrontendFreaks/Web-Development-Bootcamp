@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+}
+
+:root {
+    --primary-color: #fef08a;
+    --off-white: #efeee8;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+.container {
+    padding: 2rem 4rem;
+    margin: 3rem 20%;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+
+.container h2 {
+    margin: 1rem 0;
+}
+
+.input1 {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.input2 {
+    display: inline;
+    margin: 0 0.5rem;
+}
+
+.mini-container {
+    margin: 2rem 0;
+    background-color: var(--off-white);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.mini-container h3 {
+    margin: 1rem 0;
+}
+
+button {
+    font-size:medium;
+    border-radius: 0.5rem;
+    border: 1px solid;
+    background-color: rgb(246, 104, 38);
+}
