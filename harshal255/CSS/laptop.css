@@ -199,18 +199,6 @@
     width: 100%;
     text-align: center;
   }
-
-  /* #pg4 #form {
-        font-size: 20px;
-        width: 75%;
-        text-align: center;
-        justify-content: center;
-        margin-top: 50px;
-        padding-top: 10px;
-        padding-bottom: 20px;
-        margin-left: 12.5%;
-    } */
-
   .container5 {
     z-index: 12;
     /* max-width: 1350px; */
@@ -245,17 +233,6 @@
   .content .message-box {
     width: 230%;
   }
-
-  /* .forminput {
-
-        margin-right: 0px;
-    }
-
-    .form {
-        border: 2px solid salmon;
-        width: 60%;
-        margin: 20px 20px 10px 20px;
-    } */
 
   #message {
     border: 2px solid green;

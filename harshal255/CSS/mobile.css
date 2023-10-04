@@ -278,13 +278,6 @@
     transition: 0.4s ease-in-out transform;
   }
 
-  /* .Social {
-         margin-top: 20px;
-         height: 50px;
-         font-size: 25px;
-         padding-top: 20px;
-     }
-     */
   #pg3 form {
     padding: 0%;
     /* border: 2px solid green; */
@@ -328,27 +321,6 @@
     height: 567px;
   }
 
-  /* #pg4 #form {
-        font-size: 20px;
-        width: 75%;
-        text-align: center;
-        justify-content: center;
-        margin-top: 50px;
-        padding-top: 10px;
-        padding-bottom: 20px;
-        margin-left: 12.5%;
-    } */
-
-  /* .forminput {
-
-        margin-right: 0px;
-    }
-
-    .form {
-        border: 2px solid salmon;
-        width: 80%;
-        margin: 10px 20px 10px 20px;
-    } */
 
   #message {
     border: 2px solid green;
@@ -378,11 +350,6 @@
     padding: 10px;
     font-size: 0.8rem;
   }
-
-  /* .footerline {
-        display: none;
-
-    } */
 
   .container5 {
     margin: 8px;
