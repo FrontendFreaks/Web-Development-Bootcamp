@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy,sans-serif;
+}
+
+html,body{
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+
+/*---Navigation---*/
+
+#nav{
+    width: inherit;
+    height: 40vh;
+    background-color: white;
+}
+#nav nav{
+    width: inherit;
+    height: 10vh;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: rgb(1, 191, 254);    
+}
+#nav nav a{
+    text-decoration: none;
+    color: white;
+}
+hr{
+    background-color: #dadada;
+    height: 10px;
+    border: none;
+}
+
+/*---Layout---*/
+#layout{
+    width: inherit;
+    height: 60vh;
+    color: white;
+}
+header{
+    height: 15%;
+    background-color: brown;
+    color: white;
+    line-height: 3.5;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+aside{
+    width: 40vw;
+    height: 40vh;
+    background-color:thistle;
+    line-height: 4;
+    text-align: center;
+}
+article{
+    height: 40vh;
+    background-color:tan;
+    text-align: center;
+}
+article p{
+    padding: 5% 2%;
+}
+footer{
+    width: inherit;
+    height: 15%;
+    background-color: brown;
+    line-height: 3.5;
+    text-align: center;
+}
+
+
+@media all and (width<=600px){
+    #nav nav{
+        flex-direction: column;
+        height: 40vh;
+    }
+   
+}
+
+/* @media all and(width<=900px){
+    #layout main{
+        flex-direction: column;
+    }
+} */
