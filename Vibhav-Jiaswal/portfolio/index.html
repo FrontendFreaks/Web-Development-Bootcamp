@@ -2,105 +2,107 @@
 <html lang="en">
 
 <head>
-    <title>Vibhab Portfolio</title>
-</head>
+    <title>Vibhav Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 <body>
-    <h1>Vibhav Jiawal</h1>
-    <p>I am frontend developer from india.</p>
+    <header class="main-box">
+        <nav>
+            <input type="checkbox" id="check">
+            <div class="btn-one">
+                <label for="check">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </div>
+            <div class="sidebar-menu">
+                <div class="heading">
+                    <h1>Portfolio</h1>
+                </div>
+                <div class="btn-two">
+                    <label for="check">
+                        <i class="fas fa-times fa-beat-fade"></i> </label>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <ul>
+                        <a href="#"><i class="fa-brands fa-instagram fa-beat-fade"></i></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin fa-beat-fade"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp fa-beat-fade"></i></a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-    <a href="https://www.linkedin.com/in/vibhav-jaiswal-b789bb201/" target="_blank">LinkedIn</a>
-    <a href="" target="_blank">Twitter</a>
-    <a href="https://github.com/Vibhav-Jaiswal" target="_blank">GitHub</a>
+        <div class="content">
+            <div class="text">Hello, It's Me</div>
+            <div class="name">Vibhav Jaiswal</div>
+            <div class="job">
+                <span>And, I'm a</span>
+                <div class="typing-text">
+                    <span>FrontEnd Developer.</span>
+                </div>
+            </div>
+            <div class="btn">
+                <button><a href="#about">About Me</a></button>
+                <button><a href="#contact">Follow Me</a></button>
+            </div>
+        </div>
+        <div class="image">
+            <img src="../assets/vibhav.png" alt="profile_image">
+        </div>
 
-    <br>
-    <br>
-    <br>
+        
+    </header>
 
-    <img src="../assets/img.jpeg" alt="Vibhav Jaiswal profile img" width="251px" />
+    <div id="about">
+        <h1>About Me</h1>
+        <div class="card">
+            <div class="heading">
+                <h3>Introduction</h3>
+            </div>
+            <div class="text">
+               <p>Hello i am Vibhav Jiaswal, i belong to Prayagraj 
+                 currently i am purcuing my Bacholar Degrees in IT branch from
+                 ABES Engineering College , Ghaziabad. 
+               </p>
+               <p>I am eager leraner, constanly striving to improve my skill.
+                I am also a team player and enjoy collaborating on projects.
+                I am a fast-learner , hardworking ,innovative, problem-slover, and 
+                having a good communication skills and presentation skills.
+               </p>
+               <p>I have a understanding of Java programming language, oops concepts, 
+                Frontend Technology like HTML, CSS, JavaScript, React.js.
+                I have a knowledge of tools like git and github and vscode.
+               </p>
+            </div>
+        </div>
+    </div>
 
-    <!-- <img src="https://images.unsplash.com/photo-1691433790054-5b3821080f4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE5MHxKcGc2S2lkbC1Ia3x8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60" alt="img" width="400px" /> -->
-
-
+    <div id="resume">
+        <h1>Resume</h1>
+        <img src="../assets/Screenshot (226).png" alt="">
+    </div>
     
-    <!-- List -->
-    <ul type="circle">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-    </ul>
-
-    <ol type="1">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-    </ol>
-
-    <!-- table -->
-    <table>
-        <thead>
-            <tr>
-                <th>Class</th>
-                <th>Institute</th>
-                <th>CGPA</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>10</td>
-                <td>PPS</td>
-                <td>10 CGPA</td>
-            </tr>
-            <tr>
-                <td>12</td>
-                <td>PPS</td>
-                <td>8 CGPA</td>
-            </tr>
-            <tr>
-                <td>B-Tech</td>
-                <td>ABESEC</td>
-                <td>7 CGPA</td>
-            </tr>
-        </tbody>
-    </table>
-    
-    <br>
-    <br>
-
-    <!-- Form -->
-    <form action="">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name">
-        <br>
-        <label for="email">Email</label>
-        <input type="email" name="email" id="rmail">
-        <br>
-        <label for="message">Message</label>
-        <textarea name="mass" id="message" cols="30" rows="10"></textarea>
-        <br>
-        <input type="submit" value="Submit">
-
-        <!-- Button -->
-        <button>Clear Form</button>
-    </form>
-
-    <br>
-
-    <!-- what's new in html5 -->
-    <!-- audio and video support -->
-
- 
-    <audio src="" controls></audio>
-    <br>
-    <br>
-    <br>
-
-    <video src="" controls></video>
-    <br>
-    <br>
-    <br>
-    <iframe src="" frameborder="0"></iframe>
-
+    <footer id="contact">
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <div class="contact-info">
+            <p>Email: vibhavjaiswal9793@gmail.com</p>
+            <p>Phone: (+91) 9793053393</p>
+        </div>
+        <p>&copy; 2023 vibhav jaiswla</p>
+    </footer>
 </body>
-
+<br>
 </html>

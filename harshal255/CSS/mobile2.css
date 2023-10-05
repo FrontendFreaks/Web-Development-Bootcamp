@@ -1,0 +1,378 @@
+@media only screen and (min-width: 450px) and (max-width: 480px) {
+  * {
+    width: 100%;
+  }
+
+  .navbar {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .logo img {
+    height: 55px;
+    width: 60px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .logo {
+    padding-left: 22px;
+    padding-top: 22px;
+  }
+
+  .animation-area {
+    background: linear-gradient(to right, #070108, #350547);
+    width: 480px;
+    height: 100%;
+    position: relative;
+  }
+
+  .navlist {
+    width: 63%;
+    height: 58px;
+    border: 1px solid rgb(0, 255, 213);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+
+  .icon {
+    position: relative;
+    color: rgb(6, 255, 243);
+    padding-top: 0px;
+    line-height: 75px;
+    font-size: 1.3em;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .text {
+    display: none;
+  }
+
+  .navlist li a {
+    height: 59px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid greenyellow; */
+    justify-content: center;
+    text-align: center;
+  }
+
+  .title {
+    margin-top: 25px;
+    height: 50px;
+    font-size: 30px;
+    padding-top: 20px;
+    overflow: clip;
+  }
+
+  .container {
+    position: relative;
+    text-align: center;
+    padding: 50px 0px;
+    margin-top: 45px;
+  }
+
+  .container1 {
+    margin-left: 13%;
+    width: 50%;
+    /* border: 3px solid green; */
+    font-size: 22px;
+  }
+
+  .container2 {
+    font-size: 60px;
+    animation: Harshal2 5s 0s alternate-reverse;
+    animation-iteration-count: 30;
+    /* border: 3px solid blue; */
+    white-space: nowrap;
+    width: 77%;
+    margin-left: 13%;
+    overflow: hidden;
+  }
+
+  .containerx {
+    /* border: 3px solid red; */
+
+    width: 75%;
+    justify-items: center;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 13%;
+  }
+
+  .container3 {
+    font-size: 27px;
+    padding-top: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    /* border: 3px solid greenyellow; */
+  }
+
+  .container4 {
+    font-size: 12px;
+    /* border: 3px solid greenyellow; */
+    padding-top: 15px;
+    /* overflow: hidden; */
+    /* white-space: nowrap; */
+    animation: text 8s 1s infinite;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  }
+
+  .title1 {
+    font-size: 25px;
+    padding-bottom: 10px;
+  }
+
+  .title2 {
+    font-size: 25px;
+    margin-top: 60px;
+  }
+
+  .title3 {
+    font-size: 25px;
+    margin-top: 25px;
+  }
+
+  .title4 {
+    font-size: 25px;
+    margin-top: 25px;
+  }
+
+  .clg {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .clg img {
+    width: 100%;
+  }
+
+  .clg div {
+    margin-left: 0px;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills img {
+    /* border: 2px solid slategray; */
+    padding-left: 37.5%;
+  }
+
+  .skills .language {
+    padding-top: 10px;
+    width: 100%;
+  }
+
+  .skills .six {
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+  }
+
+  .licon1 {
+    width: 100%;
+    /* display: flex; */
+
+    margin-left: 0%;
+    margin-top: 20px;
+    padding: 10px 10px 0 0;
+  }
+
+  .language .licon1 img {
+    transition: all 0.6s linear;
+    padding-left: 0px;
+  }
+
+  .licon2 {
+    padding: 10px 10px 0 0;
+    width: 100%;
+
+    /* display: flex; */
+    margin-left: 0%;
+    margin-top: 20px;
+  }
+
+  .language .licon2 img {
+    transition: all 0.6s linear;
+    padding-left: 0px;
+  }
+
+  .language .langutext {
+    font-size: 15px;
+  }
+
+  .py img {
+    margin-left: 37.5%;
+  }
+
+  .scl {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .scl img {
+    width: 100%;
+  }
+
+  .story {
+    width: 100%;
+
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+
+    flex-wrap: wrap;
+    grid-gap: 1px;
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: space-around;
+  }
+
+  .story img {
+    border: 1px solid rgb(70, 196, 255);
+    /* height: 45px; */
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+
+    box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
+    transition: 0.4s ease-in-out transform;
+  }
+
+  .social-media-list {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 5px 5px 5px;
+    animation: normal;
+  }
+
+  .social-media-list a {
+    text-decoration: none;
+  }
+
+  .social-media-list a i {
+    position: relative;
+    text-align: center;
+    padding: 15px 12.5px 10px 12.5px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 70px;
+    color: rgb(9, 255, 194);
+    border: 2px solid rgb(4, 255, 4);
+    font-size: 35px;
+    width: 40px;
+    height: 40px;
+    animation: social-icons2 10s normal infinite;
+  }
+
+  #pg3 {
+    width: 100%;
+
+    padding-bottom: 10px;
+  }
+
+  #pg4 {
+    width: 100%;
+    text-align: center;
+  }
+
+  #pg4 #form {
+    font-size: 20px;
+    width: 75%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-left: 12.5%;
+  }
+
+  .forminput {
+    margin-right: 0px;
+  }
+
+  .form {
+    border: 2px solid salmon;
+    width: 80%;
+    margin: 10px 20px 10px 20px;
+  }
+
+  #message {
+    border: 2px solid green;
+    margin: 10px 20px 10px 20px;
+    width: 75%;
+  }
+
+  #pg5 {
+    text-align: center;
+    justify-content: center;
+  }
+  .sec-text {
+    font-size: 1.2rem;
+    height: 50px;
+  }
+
+  #pg5 video {
+    width: 90%;
+    /* margin: auto 15% auto 15%; */
+    margin: 0%;
+  }
+
+  .footerline {
+    margin-left: 10%;
+    /* border: 2px solid rgb(37, 221, 245); */
+    animation: none;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    font-size: 15px;
+  }
+
+  .container5 {
+    margin: 20px;
+    width: 93%;
+  }
+
+  .content .image-box {
+    display: none;
+  }
+
+  .content .input-box {
+    height: 41px;
+    width: 223%;
+    margin: 16px 0;
+    position: relative;
+  }
+
+  .content .input-box input {
+    position: inherit;
+  }
+
+  .content .message-box textarea {
+    position: inherit;
+
+    resize: both;
+    background: #fae9fb;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+
+  .content .message-box {
+    width: 230%;
+  }
+}
