@@ -1,0 +1,66 @@
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.4;
+  }
+
+  100% {
+    transform: translateY(-800px) rotate(360deg);
+    opacity: 0.1;
+  }
+}
+
+@keyframes text {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes Harshal {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 32%;
+  }
+}
+
+@keyframes Harshal2 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 77%;
+  }
+}
+
+@keyframes social-icons1 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 95%;
+  }
+}
+
+@keyframes social-icons2 {
+  0% {
+    overflow: hidden;
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}

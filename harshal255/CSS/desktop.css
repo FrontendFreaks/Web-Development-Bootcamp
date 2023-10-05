@@ -1,0 +1,53 @@
+@media only screen and (min-width: 1390px) and (max-width: 1600px) {
+  .logo img {
+    position: sticky;
+  }
+
+  .navlist {
+    position: sticky;
+  }
+
+  .navright {
+    visibility: visible;
+    position: relative;
+    width: 10%;
+    /* border: 2px solid white; */
+    height: 25px;
+    display: flex;
+    margin-top: 40px;
+    padding-left: 2.5%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .Home {
+    margin-top: 70px;
+    padding-top: 14px;
+  }
+
+  .container {
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+
+  .container2 {
+    animation: Harshal 5s 0s alternate-reverse;
+    animation-iteration-count: 5;
+    /* border: 3px solid blue; */
+    white-space: nowrap;
+    width: 32%;
+    margin-left: 32%;
+    overflow: hidden;
+  }
+
+  .container5 {
+    z-index: 12;
+    /* max-width: 1350px; */
+    width: 90%;
+  }
+
+  .content .image-box {
+    max-width: 55%;
+    visibility: visible;
+  }
+}
