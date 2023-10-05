@@ -1,0 +1,96 @@
+.toggle {
+  position: fixed;
+  bottom: 120px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+}
+.toggle-btn:hover {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+
+nav .nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-45deg);
+}
+
+.nav-content .toggle-btn,
+.nav-content span a {
+  height: 60px;
+  width: 60px;
+  background: #fff;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.nav-content span a:hover {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  animation: social-icons 1s normal infinite;
+}
+
+.nav-content .toggle-btn {
+  font-size: 35px;
+  color: #0e2431;
+  z-index: 100;
+  cursor: pointer;
+  transform: rotate(-225deg);
+  transition: all 0.6s ease;
+}
+
+nav.open .toggle-btn {
+  transform: rotate(0deg);
+}
+
+.nav-content span {
+  position: absolute;
+  transition: all 0.6s ease;
+  opacity: 0;
+}
+
+nav.open .nav-content span {
+  transform: rotate(calc(var(--i) * (360deg / 8))) translateY(120px);
+  opacity: 1;
+}
+
+.nav-content span a {
+  text-decoration: none;
+  transform: rotate(45deg);
+}
+
+.nav-content span a ion-icon {
+  font-size: 24px;
+
+  transform: rotate(calc(var(--i) * (360deg / -8)));
+
+  transition: 0.2s;
+}
+
+.nav-content span a:hover ion-icon {
+  opacity: 1;
+}
+
+@keyframes social-icons {
+  0% {
+    overflow: hidden;
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(360deg);
+  }
+
+}
+@media only screen and (min-width: 0px) and (max-width: 910px) {
+  .toggle {
+    display: none;
+  }
+}
