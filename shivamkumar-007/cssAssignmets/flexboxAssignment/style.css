@@ -8,28 +8,33 @@
 html,body{
     width: 100vw;
     min-height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
+}
+.wrapper{
+    width: 100vw;
+    min-height: 100vh;
 }
 
 
-/*---Navigation---*/
+            /*---Navigation---*/
 
 #nav{
     width: inherit;
-    height: 40vh;
+    min-height: 40vh;
     background-color: white;
 }
 #nav nav{
     width: inherit;
     height: 10vh;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: flex-end;
     align-items: center;
     background-color: rgb(1, 191, 254);    
 }
 #nav nav a{
     text-decoration: none;
     color: white;
+    padding: 20px;
 }
 hr{
     background-color: #dadada;
@@ -37,10 +42,10 @@ hr{
     border: none;
 }
 
-/*---Layout---*/
+              /*---Layout---*/
 #layout{
     width: inherit;
-    height: 60vh;
+    min-height: 60vh;
     color: white;
 }
 header{
@@ -53,7 +58,6 @@ header{
 
 main{
     display: flex;
-    flex-direction: row;
 }
 aside{
     width: 40vw;
@@ -62,6 +66,7 @@ aside{
     line-height: 4;
     text-align: center;
 }
+
 article{
     height: 40vh;
     background-color:tan;
@@ -79,16 +84,38 @@ footer{
 }
 
 
-@media all and (width<=600px){
+@media all and (width<500px){
     #nav nav{
         flex-direction: column;
-        height: 40vh;
+        min-height: 40vh;
     }
-   
+    
+    #layout main .aside-left{
+        width: 100vw;
+     }
+    #layout main .aside-right{
+        width: 100vw;
+     }
+     
+    
 }
 
-/* @media all and(width<=900px){
-    #layout main{
-        flex-direction: column;
+@media all and (max-width:900px){
+    #nav nav{
+        justify-content: space-evenly;
     }
-} */
+   
+   
+    #layout main{
+        flex-flow: row wrap;
+    }
+    #layout main article{
+        order: -1;
+    }
+    #layout main aside{
+        height: 10vh;
+        width: 50vw;
+     }
+    
+    
+}
