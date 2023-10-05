@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>
+        Build a Survey Form using HTML and CSS
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+  
+<body>
+    <h1>Survey Form</h1>
+  
+    <!-- Create Form -->
+    <form id="form">
+
+        <!-- Note: we can also use <fieldset> and <legend> elements instead of <div> to group related form controls.  -->
+
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name:
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="name"
+                   placeholder="Enter your name" required/>
+        </div>
+  
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email:
+            </label>
+ 
+            <!-- Input Type Email-->
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email" required/>
+        </div>
+  
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Age:
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="age"
+                   placeholder="Enter your age" />
+        </div>
+  
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Which option best describes you?
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="role" id="role" required>
+                <option value="student">Student</option>
+                <option value="student">Graduated</option>
+                <option value="intern">Intern</option>
+                <option value="professional">
+                    Professional
+                </option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+  
+        <div class="form-control">
+            <label>
+                Would you Like to get Job updates on email?
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio"
+                       id="recommed-1"
+                       name="recommed">Yes</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">No</input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label>Languages and Frameworks known
+                <small>(Check all that apply)</small>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp">C</input></label>
+            <label for="inp-2">
+                <input type="checkbox"
+                       name="inp">C++</input></label>
+            <label for="inp-3">
+                <input type="checkbox"
+                       name="inp">C#</input></label>
+            <label for="inp-4">
+                <input type="checkbox"
+                       name="inp">Java</input></label>
+            <label for="inp-5">
+                <input type="checkbox"
+                       name="inp">Python</input></label>
+            <label for="inp-6">
+                <input type="checkbox"
+                       name="inp">JavaScript</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">React</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">Angular</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">Django</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">Spring</input></label>
+        </div>
+  
+        <div class="form-control">
+            <label for="comment">
+                Any comments or suggestions:-
+            </label>
+ 
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment"
+                placeholder="Enter your comment here">
+            </textarea>
+        </div>
+  
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+</body>
+</html>
+=======
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kartikey Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section class="section-one">
+      <h1>Kartikey Tiwari</h1>
+      <p class="About">
+        Aspiring <span>frontend developer</span> from India exploring the world
+        of web development. Learning, building, and sharing my coding journey.
+        🚀
+      </p>
+    </section>
+
+    <section class="section-two">
+      <p id="link-deatail">Connect with me:</p>
+      <div class="social-container">
+        <a
+          class="social-links"
+          rel="noopener"
+          href="https://github.com/KartikeyTiwari121"
+          target="_blank"
+          >Github</a
+        >
+
+        <a
+          class="social-links"
+          rel="noopener"
+          href="https://www.linkedin.com/in/kartikey-tiwari-868007231/"
+          target="_blank"
+          >Linkedin</a
+        >
+      </div>
+
+      <!-- using rel="noopener" (or rel="noreferrer" for older versions), and thus, preventing the window.opener reference from being set, allows new pages to be opened in their own process. -->
+
+      <br /><br />
+      <!-- <hr/> -->
+      <img
+        class="profile-img"
+        src="https://avatars.githubusercontent.com/u/131117243?v=4"
+        alt="Profile Image of Kartikey"
+        width="250px"
+      />
+    </section>
+
+    <section class="section-three">
+      <h3>Skills</h3>
+      <ul type="square">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaSCript</li>
+        <li>Git & Github</li>
+      </ul>
+
+      <p class="education-table">Education</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th>College/University</th>
+            <th>Year</th>
+            <th>CGPA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10th</td>
+            <td>BMIC U.P.</td>
+            <td>2019</td>
+            <td>78%</td>
+          </tr>
+          <tr>
+            <td>12th</td>
+            <td>BMIC U.P.</td>
+            <td>2021</td>
+            <td>83%</td>
+          </tr>
+          <tr>
+            <td>BCA</td>
+            <td>Siddharth University</td>
+            <td>2021-24</td>
+            <td>7.7</td>
+          </tr>
+        </tbody>
+      </table>
+      <br /><br />
+    </section>
+    <!-- HW -->
+    <section class="section-four">
+      <div class="form-container">
+        <p class="contact-form">Contact Me:</p>
+        <form class="form-class" action="mailto:" method="post">
+          <label for="Name">Name:</label>
+          <input
+            type="text"
+            id="Name"
+            name="Name"
+            placeholder="Enter name"
+            required
+          />
+          <br />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter Email"
+            required
+          />
+          <br />
+
+          <label for="message">Message:</label>
+          <br />
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Feedback..."
+            rows="6"
+          ></textarea>
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
+
