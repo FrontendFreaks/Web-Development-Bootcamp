@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    background-color: deepskyblue;
+    list-style: none;
+}
+
+.navigation li {
+
+    padding: 1em;
+}
+
+.navigation li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.navigation li:hover {
+    background: #1565C0;
+}
+
+@media all and (600px <=width <=800px) {
+    .navigation {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media all and (width >=800px) {
+    .navigation {
+        flex-direction: row;
+        justify-content: end;
+        /* gap: 10px; */
+    }
+}
