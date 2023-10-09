@@ -1,0 +1,221 @@
+/*----------------- this is my own css --------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the wrapper div */
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    background-color: #d7cfcf;
+}
+
+/* Style the header element */
+.header {
+    background-color: #e63737;
+    color: #141313;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    order: -1;
+}
+
+/* Style the main article element */
+.main {
+    flex: 2;
+    padding: 20px;
+    order: 1;
+    flex-direction: column;
+}
+
+/* Style the aside elements */
+.aside {
+    padding: 20px;
+}
+
+.aside-1 {
+    background-color: #19c31e;
+}
+
+.aside-2 {
+    order: 3;
+    background-color: #073860;
+}
+
+/* Style the footer element */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    order: 4;
+}
+
+/* media queries  */
+
+@media screen and (min-width: 499px) {
+
+    /* Change the order of the elements */
+    .header {
+        order: 1;
+    }
+
+    .main {
+        order: 2;
+    }
+
+    .aside-1 {
+        order: 3;
+    }
+
+    .aside-2 {
+        order: 4;
+    }
+
+    .footer {
+        order: 5;
+    }
+
+    /* Change the flex direction to column */
+    .wrapper {
+        flex-direction: column;
+    }
+}
+
+/* media queries  */
+
+@media screen and (min-width: 500px) and (max-width: 900px) {
+
+    /* Change the order of the aside elements */
+    .aside-1 {
+        order: 2;
+    }
+
+    .aside-2 {
+        order: 2;
+    }
+
+    /* Change the order of the main article element */
+    .main {
+        order: 1;
+        flex: auto;
+    }
+
+    /* Change the flex direction to column */
+    .wrapper {
+        flex-direction: column;
+        flex-flow: row wrap;
+    }
+
+    /* Set the flex property of the aside elements to 0 */
+    .aside {
+        flex: 2;
+    }
+
+    /* Set the width of the aside elements to 100% */
+    .aside-1,
+    .aside-2 {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    /* Change the order of the elements */
+    .header {
+        order: 1;
+    }
+
+    .main {
+        order: 3;
+    }
+
+    .aside-1 {
+        order: 2;
+    }
+
+    .aside-2 {
+        order: 4;
+    }
+
+    .footer {
+        order: 5;
+    }
+
+    /* Change the flex direction to row */
+    .wrapper {
+        flex-direction: row;
+    }
+}
+
+
+/*----------------- this is vishal sir's css --------------------------- */
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+
+.wrapper>* {
+    padding: 10px;
+    flex: 1 100%;
+}
+
+.header {
+    background: tomato;
+}
+
+.footer {
+    background: lightgreen;
+}
+
+.main {
+    text-align: left;
+    background: deepskyblue;
+}
+
+.aside-1 {
+    background: gold;
+}
+
+.aside-2 {
+    background: hotpink;
+}
+
+@media all and (min-width: 600px) {
+    .aside {
+        flex: 1 0 0;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .main {
+        flex: 3 0px;
+    }
+
+    .aside-1 {
+        order: 1;
+    }
+
+    .main {
+        order: 2;
+    }
+
+    .aside-2 {
+        order: 3;
+    }
+
+    .footer {
+        order: 4;
+    }
+}
+
+body {
+    padding: 2em;
+}
