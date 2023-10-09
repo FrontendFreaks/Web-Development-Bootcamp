@@ -7,6 +7,10 @@
 {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
     /* box-sizing: border-box; */
 }
 .navbar
@@ -20,12 +24,12 @@
     justify-content: space-between;
     align-items: center;
     box-shadow: -1px 2px 8px -2px grey;
-    padding: 20px;
+    padding: 45px;
 }
 .navbar a
 {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 45px;
     color: black;
     padding: 45px;
 }
@@ -44,13 +48,13 @@
     transition: 1s ease-in;
 }
 .info{
-    font-size: 25px;
+    font-size: 45px;
     margin-left: 150px;
     
 }
 .info span{
     color: #14cf93;
-    font-size: 30px;
+    font-size: 55px;
 }
 
 .image img{
@@ -81,7 +85,7 @@
     transition: 1s ease-in;
 }
 #About{
-    font-size: 45px;
+    font-size: 55px;
     
 }
 #About a
@@ -101,7 +105,7 @@
     
 }
 .profile p{
-    font-size: 25px;
+    font-size: 45px;
     padding: 55px;
     text-align: initial;
 }
@@ -109,7 +113,7 @@
 {
     padding: 15px;
     background: #fff;
-    font-size: 25px;
+    font-size: 45px;
     opacity: 0.9;
     margin:15px;
     border: #f8f9fa;
@@ -140,8 +144,9 @@
     transition: 1s ease-in;
 }
 .Education{
-    font-size: 45px;
+    font-size: 55px;
     margin-left: 30px;
+    padding-bottom: 55px;
     
 }
 .Education a
@@ -162,6 +167,7 @@
 }
 .edu{
 margin-left: 40px;
+font-size: 45px;
 }
 #detail-2:hover
 {
@@ -171,4 +177,3 @@ margin-left: 40px;
 {
     color: #14cf93;
 }
-
