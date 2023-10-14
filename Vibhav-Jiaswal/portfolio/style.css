@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* hining scroll bar */
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  background: #bdc3c7;
+  background: -webkit-linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); 
+  background: linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); 
+}
+
+body::-webkit-scrollbar {
+  width: 0.1rem;
+}
+.main-box {
+  /* background: url(); */
+  /* background-size: cover; */
+  height: 100vh;
+  width: 100%;
+}
+nav {
+  position: fixed;
+}
+
+.main-box .sidebar-menu {
+  position: fixed;
+  height: 100vh;
+  width: 280px;
+  left: -280px;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+
+.sidebar-menu .heading {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 0 6px rgba(66, 64, 64, 0.5);
+}
+
+.sidebar-menu .heading h1 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  position: absolute;
+  left: 50px;
+  line-height: 60px;
+}
+
+.sidebar-menu .menu {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+}
+
+.sidebar-menu .menu li {
+  margin-top: 6px;
+  padding: 14px 20px;
+}
+
+.sidebar-menu .menu a {
+    color: #fff;
+  font-size: 20px;
+}
+
+.sidebar-menu .menu li:hover {
+  border-left: 1px solid #fff;
+  box-shadow: 0 0 6px rgba(247, 244, 244, 0.5);
+}
+
+.sidebar-menu .social-media {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%);
+  list-style: none;
+  cursor: pointer;
+}
+
+.sidebar-menu .social-media i {
+  padding: 0 5px;
+  color: #fff;
+  opacity: 0.6;
+  font-size: 20px;
+}
+
+.sidebar-menu .social-media i:hover {
+  opacity: 1;
+  transition: all 0.2s linear;
+  transform: scale(1.01);
+}
+
+#check {
+  display: none;
+}
+
+.main-box .btn-one i {
+    color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  left: 16px;
+  line-height: 60px;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.3s linear;
+}
+
+.sidebar-menu .btn-two i {
+    color: #fff;
+  font-size: 25px;
+  line-height: 6px;
+  position: absolute;
+  left: 250px;
+  cursor: pointer;
+  transform: all 0.3s linear;
+  top: 25px;
+}
+
+.btn-one i:hover {
+  font-size: 29px;
+}
+
+.btn-two i:hover {
+  font-size: 24px;
+}
+
+#check:checked ~ .sidebar-menu {
+  left: 0px;
+}
+
+#check:checked ~ .btn-one i {
+  opacity: 0;
+}
+
+#check:checked ~ .btn-two i {
+  opacity: 1;
+}
+
+.content {
+  position: absolute;
+  top: 33%;
+  left: 10%;
+}
+
+.content .text {
+  font-size: 27px;
+  color: #949799;
+  line-height: 50px;
+}
+
+.content .name {
+  font-size: 75px;
+  color: #8181b3;
+  margin: -20px 0 0 -3px;
+}
+
+.content .job {
+  font-size: 40px;
+  color: #69798a;
+  display: flex;
+}
+
+.content .job .typing-text {
+  color: #1de2d1;
+  margin-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid;
+  animation: typing 10s steps(19) infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0ch;
+  }
+  50% {
+    width: 17ch;
+  }
+  100% {
+    width: 0ch;
+  }
+}
+
+.content .btn {
+  margin: 20px 0 0 50px;
+}
+
+.content .btn button {
+  color: #fff;
+  font-size: 15px;
+  margin: 0 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  background: linear-gradient(135deg, #2afadf 10%, #c346c2 100%);
+  transition: all 0.3s ease;
+}
+
+.content .btn button:hover {
+  transform: scale(0.98);
+}
+
+header .image img {
+  position: absolute;
+  right: 100px;
+  height: 100%;
+}
+
+/* Apply styles to the about section */
+#about {
+  margin-top: 60px;
+  color: white;
+  text-align: center;
+}
+
+#about h1{
+  margin-bottom: 20px;
+}
+
+.card {
+  border: 1px solid #a09d9d;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(247, 244, 244, 0.5);
+  padding: 20px;
+  width: 60%; 
+  margin: 0 auto; 
+}
+
+.card .heading h3 {
+  font-size: 18px;
+  margin-top: 0;
+  padding-bottom: 20px;
+}
+
+.card .text p {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+
+/* Apply styles to the resume section */
+#resume{
+  margin-top: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+#resume h1{
+  margin-bottom: 20px;
+}
+
+.resume h1 {
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+.resume img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+    margin-bottom: -50px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+footer p {
+    margin: 0;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="form">
+           <p>Already a member ? <a href="#">Sign In</a></p>
+             <div class="signUp">
+                <div class="basicDetails">
+                    <h3>Basic Details</h3>
+                    <form action="">
+                      <label for="name">Full Name :</label><br>
+                      <input type="text" name="name" class="fullName" required placeholder="Enter Full Name"><br><br>
+                      
+                      <label for="">Constituency:</label><br>
+                      <select name="Constituency" id="select">
+                        <option value="select">-select-</option>
+                        <option value="a">a</option>
+                        <option value="b">b</option>
+                        <option value="c">c</option>
+                      </select><br><br>
+                      
+                      <label for="DOB">Date Of Birth:</label><br>
+                      <input type="date" class="fullName"><br><br>
+
+                      <label for="gender">Gender :  </label><br>
+                      <label for="male">Male</label>
+                      <input type="radio" value="male" name="gender" id="gender">
+                      <label for="female">Female</label>
+                      <input type="radio" value="female" name="gender" id="gender"><br><br>
+                      
+                      <label for="">Vision & Mission</label><br><br>
+                      <textarea name="" class="fullName" id="textbox" placeholder="Type Here..."></textarea><br><br>
+                      
+                    </form>
+                      <h3>Education</h3>
+                      <div class="education fullName">
+                        <section>
+                        <div>
+                          <label for="">Degree</label><br>
+                          <input type="text" placeholder="Enter Degree" class="fullName">
+                        </div>
+                        <div>
+                          <label for="">Colleg/University</label><br>
+                          <input type="text" placeholder="Enter College/University" class="fullName">
+                        </div>
+                        <div>
+                          <label for="">Graduation Year</label><br>
+                          <input type="date" class="fullName">
+                        </div>
+                        <br>
+                        </section>
+                        <div class="button">
+                          <label for="">Cancel</label>
+                          <button>Save</button>
+                        </div>
+                      </div>
+                      
+                </div>
+               <button type="submit" class="submit">Save & Continue</button> 
+             </div>
+           </div>
+</body>
+</html>

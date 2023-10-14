@@ -1,0 +1,29 @@
+.nav-list{
+    display: flex;
+    list-style: none;
+    align-items: end;
+    justify-content: end;
+    padding-right: 20px;
+    padding: 20px 0;
+    background-color: skyblue;
+}
+.nav-item{
+    color:white;
+    margin: 10px 20px;
+    padding: 10px 20px;
+}
+.nav-item:hover{
+    background-color: rgb(29, 182, 243);
+}
+@media only screen and (max-width: 770px) {
+    .nav-list{
+        justify-content: space-evenly ;
+    }
+}
+@media only screen and (max-width: 430px) {
+    .nav-list{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

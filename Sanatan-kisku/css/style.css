@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  margin: 10px 50px ;
+}
+
+.heading {
+  display: flex;
+  padding: 10px;
+}
+
+.heading .image img{
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.heading .info {
+  margin-left: 30px;
+}
+
+.heading .info .title {
+  font-size: 50px;
+  margin: 20px 0 10px 0;
+}
+
+.heading .info .sub-title {
+  text-align: center;
+}
+
+.heading .info span img{
+ height: 30px;
+}
+
+.card {
+  margin: 20px 0;
+}
+
+.social-media ul li, .skills ul li {
+  margin: 5px;
+}
+
+.social-media ul li:hover, .skills ul li:hover {
+  font-weight: 700;
+}
+
+.social-media ul li a{
+  color: #000;
+  text-decoration: none;
+}
+
+.education {
+  font-family: inherit;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.education td, .education th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.education tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.education tr:hover {
+  background-color: #ddd;
+}
+
+.education th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #000;
+  color: #fff;
+}

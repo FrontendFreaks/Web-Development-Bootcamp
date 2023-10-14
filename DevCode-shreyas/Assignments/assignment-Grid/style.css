@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.profile-section {
+    grid-area: profile;
+}
+
+.discover-section {
+    grid-area: discover;
+}
+
+.post-section {
+    grid-area: post;
+}
+
+.main-section {
+    grid-area: main;
+}
+
+.news-section {
+    grid-area: news;
+}
+
+.ad-section {
+    grid-area: ad-Section;
+}
+
+
+.wrapper {
+    display: grid;
+    grid:
+        'navbar navbar navbar navbar navbar navbar navbar'
+        'profile post post post news news news'
+        'profile main main main news news news'
+        'discover main main main ad-Section ad-Section ad-Section';
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+}
+
+.navbar {
+    border-radius: 0px;
+    margin-bottom: 15px;
+    width: 100vw;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    border: 2px solid black;
+}
+
+.profile-section {
+    margin-left: 17vw;
+    height: 44vh;
+    width: 13vw;
+    padding: 50px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid black;
+}
+
+.discover-section {
+    margin-top: -62vh;
+    margin-left: 17vw;
+    height: 20vh;
+    padding: 50px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid black;
+}
+
+.post-section {
+    width: 35vw;
+    height: 16vh;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid black;
+}
+
+.main-section {
+    width: 35vw;
+    height: 90vh;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid black;
+}
+
+.news-section {
+    margin-right: 15vw;
+    width: 18vw;
+    height: 40vh;
+    padding: 50px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid black;
+}
+
+.ad-section {
+    margin-top: -66vh;
+    margin-right: 15vw;
+    padding: 50px;
+    text-align: center;
+    font-size: 20px;
+    height: 30vh;
+    border: 2px solid black;
+}
