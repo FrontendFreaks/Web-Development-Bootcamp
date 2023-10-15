@@ -1,0 +1,106 @@
+/* Not responsive */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    border: 1px solid rgba(193, 191, 191, 0.753);
+    border-radius: 5px;
+}
+.navbar{
+    grid-area: navbar;
+}
+.profile-section{
+    grid-area: profile;
+}
+.discover-section{
+    grid-area: discover;
+}
+.post-section{
+    grid-area: post;
+}
+.main-section{
+    grid-area: main;
+}
+.news-section{
+    grid-area: news;
+}
+.ad-section{
+    grid-area: ad-Section;
+}
+
+
+.wrapper{
+    display: grid;
+  grid:
+  'navbar navbar navbar navbar navbar navbar navbar'
+  'profile post post post news news news'
+  'profile main main main news news news'
+  'discover main main main ad-Section ad-Section ad-Section';
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+}
+.navbar{
+    border-radius: 0px;
+    margin-bottom: 15px;
+    width: 100vw;
+    background-color: rgb(184, 213, 239);
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    border-bottom: 1px solid rgba(224, 220, 220, 0.573);
+}
+.profile-section{
+    margin-left: 17vw;
+    height: 44vh;
+    width: 13vw;
+    background-color: rgb(248, 245, 223);
+    padding: 50px;
+    text-align: center;
+    font-size: 20px; 
+}
+.discover-section{
+    margin-top: -62vh;
+    /* this margin-top will take discover section near to profile section as required which was stretched/affected by increasing height of main section */
+    margin-left: 17vw;
+    height: 20vh;
+    background-color: rgb(255, 234, 150);
+    padding: 50px;
+    text-align: center;
+    font-size: 20px; 
+}
+.post-section{
+    width: 35vw;
+    height: 16vh;
+    background-color: rgb(175, 246, 168);
+    padding: 20px;
+    text-align: center;
+    font-size: 20px; 
+}
+.main-section{
+    width: 35vw;
+    height: 90vh;
+    background-color: rgb(154, 226, 246);
+    padding: 20px;
+    text-align: center;
+    font-size: 20px; 
+}
+.news-section{
+    margin-right: 15vw;
+    width: 18vw;
+    height: 40vh;
+    background-color: rgb(152, 255, 219);
+    padding: 50px;
+    text-align: center;
+    font-size: 20px; 
+}
+.ad-section{
+    margin-top: -66vh;
+    margin-right: 15vw;
+    background-color: rgb(201, 184, 251);
+    padding: 50px;
+    text-align: center;
+    font-size: 20px;  
+    height: 30vh;
+}
