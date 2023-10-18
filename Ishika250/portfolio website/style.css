@@ -3,7 +3,10 @@
     padding: 0;
 }
 
-
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 5 rem;
+}
 body {
     background-color: rgb(7, 7, 36);
     color: white;
