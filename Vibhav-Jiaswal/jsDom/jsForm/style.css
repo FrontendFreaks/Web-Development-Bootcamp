@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(236, 235, 235);
+}
+.title{
+    text-align: center;
+    font-size: 3rem;
+    margin: 2rem;
+}
+
+#student-form{
+    width: 20rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 3rem;
+    background: white;  
+    line-height: 2.5rem;
+    font-size: 1.3rem; 
+    border-radius: 1rem;
+}
+
+#student-form input{
+    width: 15rem;
+    padding: 0.5rem;
+    border: 0.2rem solid rgb(210, 207, 207);
+    border-radius: 0.5rem;
+}
+
+.btn{
+    margin-top: 1rem;
+}
+
+.btn #submit-btn , #reset-btn{
+    width: 6rem;
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+#student-container{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+#student-container div{
+    width: 25rem;
+    height: auto;
+    padding: 2rem 3rem;
+    background: white;  
+    line-height: 2.5rem;
+    font-size: 1.3rem; 
+    border-radius: 1rem;
+}
