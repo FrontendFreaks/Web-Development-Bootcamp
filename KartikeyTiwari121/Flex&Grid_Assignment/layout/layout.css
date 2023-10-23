@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  background: #3a3939;
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+.wrapper-class {
+  display: flex;
+  flex-flow: row wrap;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  text-align: center;
+  row-gap: 5px;
+  column-gap: 5px;
+}
+.wrapper-class > * {
+  /* >* selects all childs */
+  border-radius: 20px;
+  flex: 1 100%;
+  /* In above , flex: 1 100%; is setting the following properties:
+   -flex-grow: 1: The element will grow proportionally to other elements within the same flex container when there's extra space.
+
+   -flex-shrink: 1: The element will shrink proportionally to other elements when there's not enough space.
+
+   -flex-basis: 100%: The initial size of the element is set to 100% of its parent container's width.
+        So, in this context, flex: 1 100%; is a way to make an element grow and shrink while initially occupying the full width of its parent container. */
+}
+.header-class {
+  background-color: chocolate;
+  padding: 15px;
+  font-size: 20px;
+}
+.main-content {
+  background: crimson;
+  padding: 25px;
+  font-size: 18px;
+}
+.aside {
+  font-weight: 600;
+}
+.aside1 {
+  background-color: coral;
+  padding: 18px;
+}
+.aside2 {
+  background: darkturquoise;
+  padding: 18px;
+}
+.footer {
+  background: indianred;
+  padding: 15px;
+}
+
+/* Media query starts here */
+@media all and (min-width: 500px) and (max-width: 800px) {
+  .header-class {
+    background-color: rgb(45, 150, 3);
+  }
+  .aside {
+    flex: 1;
+    /* this(flex property), in someway work like Fraction(fr) in grid, means how much width both will take, you can also use %. */
+  }
+}
+@media all and (min-width: 800px) {
+  .header-class {
+    order: 1;
+  }
+  .main-content {
+    flex: 60%;
+    order: 3;
+  }
+  .aside1 {
+    background-color: coral;
+    order: 2;
+    flex: 10%;
+  }
+  .aside2 {
+    background: darkturquoise;
+    order: 4;
+    flex: 10%;
+  }
+  .footer {
+    background: indianred;
+    order: 5;
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+  </head>
+  <body>
+    <header>
+      <h1>CSS Workshop Registration Form</h1>
+      <hr />
+      <p>
+        Hey! We are so happy for you. If you are ready, we’ll teach you CSS from
+        scratch.
+      </p>
+      <strong>Please note:</strong>
+      <ul>
+        <li>It's a <strong>free</strong> course</li>
+        <li>It is to learn <strong>CSS</strong></li>
+        <li>Duration - <strong>6 days</strong></li>
+      </ul>
+      <p>
+        Please make sure to fill this form before applying for the workshop.
+      </p>
+      <hr />
+    </header>
+    <section>
+      <form action="">
+        <div class="form-group">
+          <label for="fname">Full Name</label><br />
+          <input type="text" name="fname" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label><br />
+          <input type="email" name="email" />
+        </div>
+        <div class="form-group">
+          <label for="mob">Mobile Number</label><br />
+          <input type="number" name="mob" />
+        </div>
+        <div class="form-group">
+          <label for="edu">Educational Status</label><br />
+          <input type="radio" name="edu" />Graduate<br />
+          <input type="radio" name="edu" />Post Graduate<br />
+          <input type="radio" name="edu" />Under Graduate<br />
+          <input type="radio" name="edu" />12th Pass<br />
+        </div>
+        <div class="form-group">
+          <label for="latest">Tell us about your latest degree</label><br />
+          <textarea name="latest"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="reason">How much you are comfortable in CSS?</label><br />
+          <select name="reason">
+            <option value="select">Select any one</option>
+            <option value="no">
+              Absolute beginner level (Know nothing about CSS)
+            </option>
+            <option value="beginner">
+              beginner level (Have some basic idea about CSS)
+            </option>
+            <option value="intermediate">
+              Intermediate level (Able to style page but not responsive)
+            </option>
+            <option value="advanced">
+              Advanced level (Can make responsive and pixel perfect sites)
+            </option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name="check" />I confirm that all information
+          in this form is true.
+        </div>
+        <div class="form-group">
+          <input type="submit" />
+          <input type="reset" />
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
