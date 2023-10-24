@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: #eeddee;
+    font-family: sans-serif;
+}
+.head{
+    font-size: 15px;
+}
+.form{
+    height: 1100px;
+    width: 600px;
+    margin: auto;
+}
+.required{
+    font-size: 17px;
+    color: red;
+}
+.title-div{
+    height: 390px;
+    width: 600px;
+    background-color: #FDFEFE;
+    margin: 15px;
+    border-radius: 8px;
+    border-top: 12px solid #810392;
+    padding: 20px;
+}
+.Email, .Name, .whatsappNumber{
+    height: 80px;
+    width: 600px;
+    background-color: #FDFEFE;
+    margin: 15px;
+    border-radius: 8px;
+    padding: 20px;
+}
+.collegePassoutYear {
+    height: 160px;
+    width: 600px;
+    background-color: #FDFEFE;
+    margin: 15px;
+    border-radius: 8px;
+    padding: 20px;
+}
+.join{
+    height: 150px;
+    width: 600px;
+    background-color: #FDFEFE;
+    margin: 15px;
+    border-radius: 8px;
+    padding: 20px;
+}
+.name{
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+.input-div,.input-div1{
+    padding-top: 2px;
+    padding-left: 25px;
+}
+.input-div input{
+    width: 300px;
+    border: 0;
+    outline: 0;
+    border-bottom: 1.5px solid #DCD7D7;
+}
+#year{
+    margin: 5px;
+}
+.btn{
+    height: 36px;
+    width: 70px;
+    background-color: #6703c4;
+    border-radius: 5px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 540;
+    border: none;
+    position: relative;
+    margin: 10px;
+    color: white;
+}
+.last-div{
+    text-align: center;
+    padding-top: 50px;
+    color: #a2a4a6;
+    font-weight: 200;
+}
+.never{
+    padding-left: 15px;
+    padding-top: 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.term{
+    padding-left: 65px;
+    padding-top: 5px;
+    padding-bottom: 12px;
+    font-size: 12px;
+    position: absolute;
+    font-weight: 500;
+}
