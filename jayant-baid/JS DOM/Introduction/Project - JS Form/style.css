@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#student-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#btns{
+    display: flex;
+    gap: 10px;
+}
+body{
+    margin: 20px;
+}
