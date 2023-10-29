@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    width: 10rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    border-top-right-radius: 1rem;
+}
+
+input {
+    width: 30rem;
+    padding: 0.5rem 3rem;
+    font-size: 1.5rem;
+    border: none;
+    border-top-left-radius: 1rem;
+}
+
+ul li {
+    font-size: 2rem;
+}
