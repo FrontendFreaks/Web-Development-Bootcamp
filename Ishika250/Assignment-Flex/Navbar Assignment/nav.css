@@ -1,0 +1,42 @@
+ul{
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    background-color: dodgerblue;
+    padding: 0px;
+}
+li{
+    margin-bottom: 1px;
+    border-bottom: 1px solid rgba(203, 200, 200, 0.329);
+    padding: 12px;
+    text-align: center;
+}
+li:hover{
+    cursor: pointer;
+    background-color: rgba(107, 13, 239, 0.811);
+}
+li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: white;
+}
+@media all and (min-width: 800px) {
+    ul{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+@media all and (min-width: 1025px) {
+    body{
+        background: #d9d9d9;
+    }
+    ul{
+        display: flex;
+        justify-content: flex-end;
+    }
+    li{
+        padding-left: 20px;
+        border: none;
+    }
+}
